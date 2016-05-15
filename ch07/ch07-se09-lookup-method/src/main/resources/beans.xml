@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 使用lookup-method 属性来协调不同作用域的bean -->
+    <bean name="LiLei" class="ch07.se09.bean.Chinese">
+        <lookup-method name="getDog" bean="dog" />
+    </bean>
+    <!-- prototype作用域（每次打猎都带不同的狗） -->
+    <bean id="dog" class="ch07.se09.bean.Dog" scope="prototype" />
+
+</beans>
