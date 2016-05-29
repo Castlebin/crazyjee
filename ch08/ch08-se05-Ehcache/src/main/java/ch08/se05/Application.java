@@ -5,6 +5,7 @@ import ch08.se05.service.UserService;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+// 程序执行完spring容器无法关闭啦！
 public class Application {
 
     public static void main(String[] args) {
