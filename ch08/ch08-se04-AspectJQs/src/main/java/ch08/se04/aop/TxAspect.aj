@@ -1,4 +1,4 @@
-package ch08.se04.aop;
+package ch08.se04.aspect;
 
 public aspect TxAspect {
 
